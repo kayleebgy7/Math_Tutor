@@ -21,3 +21,6 @@ else
     System.out.println("Your answer to the problem is incorrect. Try again");
 }
 return volume;
+
+input.close();
+}
