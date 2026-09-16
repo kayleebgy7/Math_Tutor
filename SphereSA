@@ -10,7 +10,7 @@ public class SphereSA {
         double radius = input.nextDouble();
     }
 
-    public double radiusSquared(){
-        double radiusPow = Math.pow
+    double radiusPow = Math.pow(radius, 2);
+    return 
     }
-}
+
