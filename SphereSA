@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class SphereSA {
+    
+    public String displayEquation(){
+        System.out.println("This is the formula to solve the equation: 4 * PI * r^2");
+    }
+    public void acceptValues() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the measurement of the radius: ");
+        double radius = input.nextDouble();
+    }
+
+    public double radiusSquared(){
+        double radiusPow = Math.pow
+    }
+}
