@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public static class Pythagorean {
-    public static void getHypotenuse() {
+public class PythagoreanTheorem {
+    public static double getHypotenuse(){
         System.out.println("This is the formula : a^2 + b^2 = c^2");
         Scanner input = new Scanner(System.in);
 
     System.out.println("If you are missing the leg of the triangle enter 1, if you are missing the hypotenuse enter 2: ");
 
-    String missing = input.nextInt();
+    int missing = input.nextInt();
 
     int leg = 1;
     int hypotenuse = 2;
@@ -20,8 +20,6 @@ public static class Pythagorean {
 
         System.out.println("Enter the length of the hypotenuse: ");
         double c = input.nextDouble();
-
-
    
     }
     else

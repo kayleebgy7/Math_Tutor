@@ -1,28 +1,30 @@
-import java.util.Scanner;
+package apcsa.math_tutor;
 
+import java.util.Scanner;
 public class MathTutor {
 public static void main(String[] args){
         System.out.println("Welcome to Math Tutor, please choose a question!");
-        System.out.println("Questions: Cylinder Volume(a), Pythagorean Theorm(b), Sphere Volume(c), Sphere Surface Area(d), and Quadratic Formula(e)");
+        System.out.println("Questions: Cylinder Volume(a), Pythagorean Theorm(b), Sphere Volume(c), and Sphere Surface Area(d)");
     Scanner input = new Scanner(System.in);
         String questionType = input.nextLine();
 
-        if (questionType.equalsIgnoreCase("a")){
-           Cylinder_Volume cylinderVolume = new Cylinder_Volume();
+        if (questionType.equals("a")){
+             Cylinder_Volume cylinderVolume = new Cylinder_Volume();
               cylinderVolume.getVolume();
-        } else if (questionType.equalsIgnoreCase("b")){
+        }
+         else if (questionType.equals("b")){
             Pythagorean_Theorem pythagoreanTheorem = new Pythagorean_Theorem();
             pythagoreanTheorem.getHypotenuse();
         }
-        else if (questionType.equalsIgnoreCase("c")){
+        else if (questionType.equals("c")){
             SphereVolume sphereVolume = new SphereVolume();
             sphereVolume.getVolume();
         }
-        else if (questionType.equalsIgnoreCase("d")){
+        else if (questionType.equals("d")){
             SphereSA sphereSurfaceArea = new SphereSA();
             sphereSurfaceArea.getSurfaceArea();
         }
-        else if (questionType.equalsIgnoreCase("e")){
+        else if (questionType.equal("e")){
             QuadraticFormula quadraticFormula = new QuadraticFormula();
             quadraticFormula.getQuadraticFormula();
         }
