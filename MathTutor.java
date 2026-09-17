@@ -8,9 +8,20 @@ public static void main(String[] args){
         String questionType = input.nextLine();
 
         if (questionType.equalsIgnoreCase("a")){
-           
+           Cylinder_Volume cylinderVolume = new Cylinder_Volume();
+              cylinderVolume.getVolume();
+        } else if (questionType.equalsIgnoreCase("b")){
+            Pythagorean_Theorem pythagoreanTheorem = new Pythagorean_Theorem();
+            pythagoreanTheorem.getHypotenuse();
         }
-
+        else if (questionType.equalsIgnoreCase("c")){
+            SphereVolume sphereVolume = new SphereVolume();
+            sphereVolume.getVolume();
+        }
+        else if (questionType.equalsIgnoreCase("d")){
+            SphereSA sphereSurfaceArea = new SphereSA();
+            sphereSurfaceArea.getSurfaceArea();
+        }
 
 input.close();
 }

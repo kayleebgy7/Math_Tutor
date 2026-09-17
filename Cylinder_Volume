@@ -1,9 +1,10 @@
-public class Cylinder {
-    import java.util.Scanner;
+import java.util.Scanner;
+public static class Cylinder_Volume{
+
     public static void main(String[] args){
 
 
-    public double getCylinderVolume() {
+    public static double getCylinderVolume() {
 
    
         System.out.println("This is the formula to find the volume of a cylinder: (PI * r^2)*H");

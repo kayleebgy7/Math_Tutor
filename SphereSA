@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SphereSA {
+public static class SphereSA {
     
     public static void getSurfaceArea() {
     public String displayEquation(){
