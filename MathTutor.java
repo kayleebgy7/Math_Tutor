@@ -1,4 +1,4 @@
-package apcsa.math_tutor;
+
 
 import java.util.Scanner;
 public class MathTutor {
@@ -13,7 +13,7 @@ public static void main(String[] args){
               cylinderVolume.getVolume();
         }
          else if (questionType.equals("b")){
-            Pythagorean_Theorem pythagoreanTheorem = new Pythagorean_Theorem();
+            PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem();
             pythagoreanTheorem.solvePythagorean();
         }
         else if (questionType.equals("c")){

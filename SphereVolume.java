@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class SphereVolume {
 public static void main(String[] args){
+double answer =
+}
  System.out.println("This is the formula for solving for the volume of a sphere: 4* PI * r^2");
 
  Scanner input = new Scanner(System.in);
@@ -25,5 +27,5 @@ else
 
 input.close();
 }
-}
+
 
