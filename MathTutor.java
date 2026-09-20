@@ -14,7 +14,7 @@ public static void main(String[] args){
         }
          else if (questionType.equals("b")){
             Pythagorean_Theorem pythagoreanTheorem = new Pythagorean_Theorem();
-            pythagoreanTheorem.getHypotenuse();
+            pythagoreanTheorem.solvePythagorean();
         }
         else if (questionType.equals("c")){
             SphereVolume sphereVolume = new SphereVolume();

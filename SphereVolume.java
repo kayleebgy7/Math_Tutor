@@ -1,13 +1,14 @@
 import java.util.Scanner;
-public class Sphere_Volume {
+public class SphereVolume {
+public static void main(String[] args){
  System.out.println("This is the formula for solving for the volume of a sphere: 4* PI * r^2");
 
  Scanner input = new Scanner(System.in);
 
  System.out.println("Enter the length of the radius: ");
  double radius = input.nextDouble();
-
-double volume = 4* (Math.PI * Math.pow(radius, 2));
+double mutlipler = 4.0 / 3.0;
+double volume = multipler * (Math.PI * Math.pow(radius, 3));
 
 System.out.println("what is your answer to the problem?: ");
 double userAnswer = input.nextDouble();
@@ -20,8 +21,9 @@ else
 {
     System.out.println("Your answer to the problem is incorrect. Try again");
 }
-return volume;
+
 
 input.close();
+}
 }
 
