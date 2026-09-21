@@ -1,7 +1,7 @@
 
 public class PythagoreanTheorem {
-    private double a;
-    private double b;
+    double a;
+    double b;
     public void solvePythagorean(double a, double b){
         System.out.println("This is the formula : a^2 + b^2 = c^2");
         this.a = a;

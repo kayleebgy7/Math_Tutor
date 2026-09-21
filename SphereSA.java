@@ -1,5 +1,5 @@
 public class SphereSA {
-   private double radius;
+   double radius;
 
     public void getRadius(double radius){
        this.radius = radius;

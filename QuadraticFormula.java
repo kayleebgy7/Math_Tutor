@@ -1,7 +1,7 @@
 public class QuadraticFormula {
-    private double a;
-    private double b;
-    private double c;
+    double a;
+    double b;
+    double c;
 
     public void getNumbers(double a, double b, double c) {
         System.out.println("This is the formula for solving for the roots of a quadratic equation: (-b + sqrt(b^2 - 4ac)/2a) and (-b - sqrt(b^2 - 4ac)/2a)");

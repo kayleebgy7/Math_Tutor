@@ -1,8 +1,8 @@
 
 public class CylinderVolume{
-    private double radius;
-    private double height;
-
+    double radius;
+    double height;
+   
     public void getCylinderVolume(double radius, double height) {
 
    
@@ -18,6 +18,7 @@ public class CylinderVolume{
     
     return answer;
 
+    
     }
 
 }
