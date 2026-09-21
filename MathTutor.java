@@ -3,34 +3,75 @@
 import java.util.Scanner;
 public class MathTutor {
 public static void main(String[] args){
-        System.out.println("Welcome to Math Tutor, please choose a question!");
-        System.out.println("Questions: Cylinder Volume(a), Pythagorean Theorm(b), Sphere Volume(c), and Sphere Surface Area(d)");
-    Scanner input = new Scanner(System.in);
-        String questionType = input.nextLine();
+        Scanner input = new Scanner(System.in);
+        int questionType;
 
-        if (questionType.equals("a")){
-             Cylinder_Volume cylinderVolume = new Cylinder_Volume();
-              cylinderVolume.getVolume();
+        System.out.println("Welcome to Math Tutor, please choose a question!");
+        System.out.println("Choose a problem type: ");
+
+        do{
+        System.out.println("Cylinder Volume(1), Pythagorean Theorm(2), Sphere Volume(3), Sphere Surface Area(4), Quadratic Formula(5), and Exit(6)");    
+    
+        questionType = input.nextInt();
+
+        if (questionType == 1){
+            CylinderVolume problem = new CylinderVolume();
+            System.out.print("Enter the radius: ");
+            double radius = input.nextDouble();
+            System.out.print("Enter the height: ");
+            double height = input.nextDouble();
+            problem.getCylinderVolume(radius, height);
+            System.out.println("The volume of the cylinder is: " + problem.calculateVolume());
         }
-         else if (questionType.equals("b")){
-            PythagoreanTheorem pythagoreanTheorem = new PythagoreanTheorem();
-            pythagoreanTheorem.solvePythagorean();
+         else if (questionType == 2){
+            PythagoreanTheorem problem = new PythagoreanTheorem();
+            System.out.print("Enter a side a: ");
+            double a = input.nextDouble();
+
+            System.out.print("Enter a side b: ");
+            double b = input.nextDouble();
+            problem.solvePythagorean(a, b);
+
+            System.out.println("The hypotenuse is: " + problem.getHypotenuse());
+            
         }
-        else if (questionType.equals("c")){
-            SphereVolume sphereVolume = new SphereVolume();
-            sphereVolume.getVolume();
+        else if (questionType == 3){
+            SphereVolume problem = new SphereVolume();
+            System.out.print("Enter the radius: ");
+            double radius = input.nextDouble();
+            problem.getVolume(radius);
+
+            System.out.println("The volume of the sphere is: " + problem.calculateSphereVolume());
         }
-        else if (questionType.equals("d")){
-            SphereSA sphereSurfaceArea = new SphereSA();
-            sphereSurfaceArea.getSurfaceArea();
+        else if (questionType == 4){
+            SphereSA problem = new SphereSA();
+            System.out.print("Enter the radius: ");
+            double radius = input.nextDouble();
+            problem.getRadius(radius);
+
+            System.out.println("The surface area of the sphere is: " + problem.calculateSurfaceArea());
         }
-        else if (questionType.equal("e")){
-            QuadraticFormula quadraticFormula = new QuadraticFormula();
-            quadraticFormula.getQuadraticFormula();
+        else if (questionType == 5){
+            QuadraticFormula problem = new QuadraticFormula();
+             System.out.println("Enter the value of a: ");
+        double a = input.nextDouble();
+
+        System.out.println("Enter the value of b:");
+        double b = input.nextDouble();
+
+        System.out.println("Enter the value of c: ");
+        double c = input.nextDouble();
+        
+        problem.getNumbers(a,b,c);
+        System.out.println("The positive root is: " + problem.calculateRoots());
+            
         }
         else{
-            System.out.println("Invalid input, please try again");
+            System.out.println("You have exited the program, thank you for using Math Tutor!");
         }
+
+} while (questionType != 6);
 input.close();
 }
+
 }

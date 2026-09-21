@@ -1,27 +1,20 @@
-import java.util.Scanner;
-public static class Cylinder_Volume{
 
-    public static void main(String[] args){
-        double answer = getCylinderVolume();
-        System.out.println(answer);
-    }
+public class CylinderVolume{
+    private double radius;
+    private double height;
 
-    public static double getCylinderVolume() {
+    public void getCylinderVolume(double radius, double height) {
 
    
         System.out.println("This is the formula to find the volume of a cylinder: (PI * r^2) * H");
-        System.out.println("Enter the measurement of the radius: ");
+        this.radius = radius;
+        this.height = height;
+    }
 
-    Scanner input = new Scanner(System.in);
-    double radius = input.nextDouble();
-        System.out.println("Enter the measurement of the height: ");
-    double height = input.nextDouble();
-
+    public double calculateVolume() {
+   
     double radiusSquared = Math.pow(radius, 2);
-
     double answer = Math.PI * radiusSquared * height;
-    
-    input.close();
     
     return answer;
 
