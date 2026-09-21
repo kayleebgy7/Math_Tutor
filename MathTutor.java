@@ -11,7 +11,7 @@ public static void main(String[] args){
         System.out.println("Choose a problem type: ");
         //allows the code to run multiple times as long as the while statement is true
         do{
-        System.out.println("Cylinder Volume(1), Pythagorean Theorm(2), Sphere Volume(3), Sphere Surface Area(4), Quadratic Formula(5), and Exit(6)");    
+        System.out.println("Cylinder Volume(1), Pythagorean Theorm(2), Sphere Volume(3), Sphere Surface Area(4), Area of the Sector(5), and Exit(6)");    
         //assigns the questionType to the next integer
         questionType = input.nextInt();
         //takes the user input of the question type to 
@@ -52,23 +52,25 @@ public static void main(String[] args){
 
             System.out.println("The surface area of the sphere is: " + problem.calculateSurfaceArea());
         }
-        else if (questionType == 5){
-            QuadraticFormula problem = new QuadraticFormula();
-             System.out.println("Enter the value of a: ");
-        double a = input.nextDouble();
-
-        System.out.println("Enter the value of b:");
-        double b = input.nextDouble();
-
-        System.out.println("Enter the value of c: ");
-        double c = input.nextDouble();
-        
-        problem.getNumbers(a,b,c);
-        System.out.println("The positive root is: " + problem.calculateRoots());
+        else if (questionType == 5)
+        {
+            AreaOfSector problem = new AreaOfSector();
+             System.out.print("Enter the value of the radius: ");
+        double radius = input.nextDouble();
+            System.out.print("Enter the degrees of the angle of the sector: ");
+            double angle = input.nextDouble();
+        problem.getNumbers(radius, angle);
+        System.out.print("The area of a sector is " + problem.calculateArea());
             
         }
-        else{
-            System.out.println("You have exited the program, thank you for using Math Tutor!");
+        else if (questionType == 6)
+        {
+            System.out.print("You have exited the program, thank you for using Math Tutor!");
+           
+        }
+        else 
+        {
+            System.out.print("Input is invaild, please input another value.");
         }
 
 } while (questionType != 6);
