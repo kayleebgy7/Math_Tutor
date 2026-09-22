@@ -1,8 +1,13 @@
-
+/*Title: CylinderVolume
+* Author: Kaylee Begay
+* Purpose: uses user input to find the cylinder volume and out print the answer
+*
+* Resource: None
+*/
 public class CylinderVolume{
-    //declares radius and height as doubles that are apart of the class
-    double radius;
-    double height;
+    //declares radius and height as instance variables
+    private double radius;
+    private double height;
    //getCylinderVolume contains the parameters that are collected in the Math Tutor class
     public void getCylinderVolume(double radius, double height) {
 
