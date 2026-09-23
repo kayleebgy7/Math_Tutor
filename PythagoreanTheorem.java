@@ -21,7 +21,8 @@ public class PythagoreanTheorem {
 
 public double getHypotenuse(){
     //the equations filled in with the inputed values and returns the answer
-    return  Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    double answer =  Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    return answer;
 
 }
 }
